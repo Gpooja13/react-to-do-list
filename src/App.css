@@ -1,0 +1,333 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;500&family=Roboto:wght@500&display=swap');
+
+  :root{
+   --color: rgb(85, 84, 84);
+  }
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5vh;
+  align-items: center;
+}
+
+.logo{
+  width: 3vw;
+  margin: 0 1vw 0 1vw;
+}
+
+.name{
+  font-family: 'Roboto', sans-serif;
+  font-size: 4vh;
+  font-weight: 500;
+  color: var(--color);
+}
+
+.form-control{
+margin-top: 2vh;
+box-shadow: 1px 1px 3px;
+padding: 1vh;
+width: 50vw;
+height: 8vh;
+}
+
+.note{
+  width: 18vw;
+  height:31vh;
+  position: relative; 
+  margin: 1vh;
+  padding: 1vh;
+  border-radius: 4%;
+  box-shadow: 1px 1px 5px;
+}
+
+.left{
+  position: absolute;
+  float: right;
+  left:33.5vh;
+}
+
+.right{
+  float: right;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textPart{
+  height: 20vh;
+  overflow: hidden;
+  color: black;
+  font-size:2.5vh;
+}
+
+.done{
+  width: 19vw;
+  height: 2vh;
+}
+
+.date{
+  font-size: 1.7vh;
+  margin-top: 1vh
+}
+
+.container-height{
+  min-height: 67vh;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1vh;
+  justify-content: center;
+  align-items:center;
+}
+
+.addBtn{
+  width: 3vw;
+  height: 7vh;
+  margin-left: 1vh;
+  margin-top: 2vh;
+  color: var(--color);
+  cursor: pointer;
+}
+
+.edit-form{
+  height: 60vh;
+  width: 35vw;
+  padding: 2vh;
+  /* font-family: cursive; */
+}
+
+.modal-header{
+  padding: 1vh;
+}
+
+.modal-title{
+  margin-left: 16vw;
+}
+
+.modal1{
+  margin-left:14vw ;
+}
+
+.modal-body{
+padding: 1vh;
+margin: auto;
+}
+
+.modal-footer{
+padding: 1vh;
+justify-content: center;
+align-items: center; 
+}
+
+.removeBtn{
+  margin: 5vh;
+}
+
+.btns{
+  color: rgb(68, 61, 61);
+  cursor: pointer;
+  font-size: smaller;
+}
+
+.btns:hover{
+  color: rgb(100, 94, 94);
+}
+
+.card{
+  padding: 2vh
+}
+
+.p-fieldset-legend-text{
+  margin: 0.5vw;
+  color: rgb(58, 55, 55);
+  text-decoration: underline;
+  font-family: 'Roboto';
+  font-size: 3vh;
+}
+
+.getDate{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  color: var(--color);
+  margin-top: 1vw;
+  font-size: 2.5vh;
+}
+
+.btnGap{
+  margin: 0 1vw 0 1vw;
+}
+
+.disHide2{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .navBar{
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+  }
+  
+  .logo{
+    width: 6vw;
+    margin: 0 1vw 0 4vw;
+  }
+  
+  .name{
+    font-size: 4vh;
+  }
+  
+  .form-control{
+  margin-top: 2vh;
+  width: 75vw;
+  height: 8vh;
+  }
+  
+  .note{
+    width: 40vw;
+    height:34vh;
+    position: relative; 
+    margin: 1vh;
+    padding: 1vh;
+    border-radius: 4%;
+    box-shadow: 1px 1px 5px;
+  }
+  
+  .left{
+    position: absolute;
+    float: right;
+    left:27vh;
+  }
+
+  .center{
+    flex-direction: column;
+  }
+
+  .mainHead{
+    flex-direction: row;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .writeUp{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    flex-direction: row;
+  }
+  
+  .textPart{
+    height: 18vh;
+    font-size:2.2vh;
+  }
+  
+  .done{
+    width: 19vw;
+    height: 2vh;
+  }
+  
+  .date{
+    font-size: 1.7vh;
+    margin-top: 1vh
+  }
+  
+  .container-height{
+    min-height: 67vh;
+  }
+  
+  .grid{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  
+  .addBtn{
+    width: 3vw;
+    height: 7vh;
+    margin:2vh 0vh 0vh 2vh;
+  }
+  
+  .edit-form{
+    height: 60vh;
+    width: 80vw;
+    padding: 2vh;
+    font-size:2.5vh ;
+  }
+  
+  .modal-title{
+    margin-left: 40vw;
+  }
+  
+  .modal1{
+    margin-left:35vw ;
+  }
+  
+  .modal-body{
+  padding: 1vh;
+  margin: auto;
+  }
+  
+  .modal-footer{
+  padding: 1vh;
+  justify-content: center;
+  align-items: center; 
+  }
+  
+  .p-fieldset-legend-text{
+    margin: 0.5vw;
+    font-size: 3vh;
+  }
+  
+  .getDate{
+    margin-top: 1vw;
+    font-size: 2vh;
+  }
+  
+  .btnGap{
+    margin: 0 3vw 0 3vw;
+  }
+  
+ .navT{
+  display: flex;
+  justify-content: center;
+  align-items:end;
+  flex-direction: column;
+  width: 45vw;
+ } 
+
+ .form-control::placeholder{
+  font-size: 2vh;
+ }
+
+ .disHide{
+  display: none;
+ }
+
+ .disHide2{
+  display: block;
+}
+
+.noteBtn{
+  flex-direction: row;
+}
+
+}
