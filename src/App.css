@@ -309,7 +309,7 @@ align-items: center;
  .navT{
   display: flex;
   justify-content: center;
-  align-items:end;
+  align-items:flex-end;
   flex-direction: column;
   width: 45vw;
  } 
