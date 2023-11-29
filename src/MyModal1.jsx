@@ -10,7 +10,7 @@ const MyModal = ({ showModal, handleClose, removeAll }) => {
           <Modal.Title className='modal1'>Remove All</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>Select "Remove All" to remove all completed notes</p>
+          <div>Select "Remove All" to remove all completed notes</div>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
