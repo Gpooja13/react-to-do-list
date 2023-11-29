@@ -13,7 +13,7 @@ const Done = (props) => {
     <br />
     <div className="card">
     <Fieldset legend=" Task Completed" toggleable>
-      <p className="m-0">
+      <div className="m-0">
         <div className="grid">
           {props.arr.reverse().map((val) => {
             const line = !val.status ? "line-through" : "none";
@@ -113,7 +113,7 @@ const Done = (props) => {
             }
           })}
         </div>
-      </p>
+      </div>
       <div className="center">
         <Modal1 removeAll={props.removeAll} arr={props.arr} />
       </div>
