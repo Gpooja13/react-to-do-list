@@ -7,6 +7,7 @@ import Done from "./Done";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
+import bg2 from './Background/bg2.jpg';
 
 const localData = () => {
   const data = localStorage.getItem("myToDoList");
@@ -136,7 +137,14 @@ const App = () => {
   }, [arr]);
 
   return (
-    <>
+    <div style={{
+      backgroundImage: `url(${bg2})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      height: '100vh',
+      width: '100%',
+    }}>
       <ToastContainer
         position="top-center"
         autoClose={2000}
@@ -181,7 +189,7 @@ const App = () => {
         handleShow={handleShow}
         removeAll={removeAll}
       />
-    </>
+    </div>
   );
 };
 export default App;
